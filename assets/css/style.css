@@ -28,41 +28,53 @@ textarea{
 .time-block{
   text-align: center;
   border-radius: 15px;
+  
 }
 
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;;
+  border-top: 1px solid white;
+  display: flex;
 }
 
 .hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  flex-basis: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: #c0c0c0;
   color: white;
+  flex-basis: 10;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #befdb6;
   color: white;
+  flex-basis: 10;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #97bef0;
   color: white;
+  flex-basis: 10;
 }
 
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06AED5;
+  background-color: #5cb3ec;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .saveBtn i:hover {
