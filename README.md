@@ -1,12 +1,10 @@
-# Work-Day-Scheduler
-
 # Code-Quiz
 
 ## Description 
 
 Welcome to Work Day Scheduler.
 
-This project aims to showcase my ability in utilizing Third Party APIs by presenting a day planner with dynamically updating timeblocks that allow the user to input a task:
+This project aims to showcase my ability in utilizing Third Party APIs by presenting a work day planner with dynamically updating timeblocks that allow the user to input a task:
 
 ![](./assets/images/demo-work-day-scheduler.gif)
 
@@ -17,17 +15,17 @@ and storing user tasks locally:
 
 ## Usage
 
-In order to do this project, I used Third Party APIs such as JQuery, Bootstrap, Moment.js, and Javascript, HTML, CSS, git and github.
+In order to do this project, I used Third Party APIs such as JQuery, Bootstrap, and Moment.js in addition to Javascript, HTML, CSS, git and github.
 
-I reference and manipulate HTML elements through JQuery's `$()` selector and methods as well as adding Bootstrap class styling.
+I reference and manipulate HTML elements through JQuery's `$()` selector and its methods, as well as styling them with Bootstrap classes.
 ```
-        var container = $(".container");
-        var groupDiv = $("<div>").addClass("row time-block");
-        var timeDiv = $("<div>").text(timeString(i)).addClass("hour col-1");
-        var noteDiv = $("<input>").addClass("justify-content-center col-10 " + timeColor(i))
+var container = $(".container");
+var groupDiv = $("<div>").addClass("row time-block");
+var timeDiv = $("<div>").text(timeString(i)).addClass("hour col-1");
+var noteDiv = $("<input>").addClass("justify-content-center col-10 " + timeColor(i))
 ```
 
-I use Moment.js to display current date and time information as well as for formatting.
+I use Moment.js to format and display current date and time information.
 ```
 currentDay.text(moment().format("dddd, MMMM Do"));
 ```
