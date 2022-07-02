@@ -10,10 +10,12 @@ function displayTimeblocks(){
         var groupDiv = $("<div>").addClass("row time-block");
         var timeDiv = $("<div>").text(timeString(i)).addClass("hour col-1");
         var noteDiv = $("<input>").addClass("justify-content-center col-10 " + timeColor(i))
+        noteDiv.attr("id", "task for hour " + i);
         var saveDiv = $("<div>").text("💾").addClass("saveBtn col-1");
-
+        saveDiv.attr("id", "saveBtn");
         groupDiv.append(timeDiv, noteDiv, saveDiv);
         container.append(groupDiv);
+        console.log($("#task for hour " + i));
     }
 }
 
@@ -42,3 +44,7 @@ function timeColor(time){
 
 //Calls function to put up timeblocks
 displayTimeblocks();
+
+$(document).on("click", "#saveBtn", function(event){
+    //function to store input text
+})
