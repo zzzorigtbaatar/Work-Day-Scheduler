@@ -9,13 +9,14 @@ function displayTimeblocks(){
         var container = $(".container");
         var groupDiv = $("<div>").addClass("row time-block");
         var timeDiv = $("<div>").text(timeString(i)).addClass("hour col-1");
+        
         var noteDiv = $("<input>").addClass("justify-content-center col-10 " + timeColor(i))
         noteDiv.attr("id", "task for hour " + i);
-        var saveDiv = $("<div>").text("💾").addClass("saveBtn col-1");
-        saveDiv.attr("id", "saveBtn");
+        var saveDiv = $("<div>").text("💾").addClass("saveDiv col-1");
+        saveDiv.attr("id", "save");
+        
         groupDiv.append(timeDiv, noteDiv, saveDiv);
         container.append(groupDiv);
-        console.log($("#task for hour " + i));
     }
 }
 
@@ -45,6 +46,9 @@ function timeColor(time){
 //Calls function to put up timeblocks
 displayTimeblocks();
 
-$(document).on("click", "#saveBtn", function(event){
-    //function to store input text
+//listener that saves input text next to clicked save div
+$(document).on("click", "#save", function(event){
+    var id = $(this).siblings("input").attr("id");
+    localStorage.setItem(id, $(this).siblings("input").val());
+    console.log(localStorage.getItem(id));
 })
