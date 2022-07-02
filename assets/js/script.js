@@ -13,6 +13,7 @@ function displayTimeblocks(){
         var noteDiv = $("<input>").addClass("justify-content-center col-10 " + timeColor(i))
         noteDiv.attr("id", "task for hour " + i);
 
+        //Adds locally stored tasks to its timeblock
         if(localStorage.getItem("task for hour " + i) !== null){
             noteDiv.val(localStorage.getItem("task for hour " + i));
         }
