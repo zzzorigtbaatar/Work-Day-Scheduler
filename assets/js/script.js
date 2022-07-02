@@ -12,7 +12,12 @@ function displayTimeblocks(){
         
         var noteDiv = $("<input>").addClass("justify-content-center col-10 " + timeColor(i))
         noteDiv.attr("id", "task for hour " + i);
-        var saveDiv = $("<div>").text("💾").addClass("saveDiv col-1");
+
+        if(localStorage.getItem("task for hour " + i) !== null){
+            noteDiv.val(localStorage.getItem("task for hour " + i));
+        }
+
+        var saveDiv = $("<div>").text("💾").addClass("saveBtn col-1");
         saveDiv.attr("id", "save");
         
         groupDiv.append(timeDiv, noteDiv, saveDiv);
