@@ -13,7 +13,7 @@ This project aims to showcase my ability in utilizing Third Party APIs by presen
 and storing user tasks locally:
 ![](./assets/images/screenshot-work-day-scheduler.png)
 
-![](./assets/images/demo-work-day-scheduler-2.gif.gif)
+![](./assets/images/demo-work-day-scheduler-2.gif)
 
 ## Usage
 
