@@ -49,19 +49,19 @@ textarea{
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: #9c9c9c;
   color: white;
   flex-basis: 10;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #fff09e;
   color: white;
   flex-basis: 10;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #9debff;
   color: white;
   flex-basis: 10;
 }
@@ -70,7 +70,7 @@ textarea{
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06AED5;
+  background-color: #ffffff;
   color: white;
   display: flex;
   align-items: center;
